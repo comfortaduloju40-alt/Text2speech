@@ -1,0 +1,26 @@
+# Telegram Text-to-Speech Bot
+
+Converts text into natural-sounding speech with selectable voices,
+languages, speed, and audio format. Built with python-telegram-bot,
+FastAPI (webhook mode), SQLAlchemy, and ffmpeg. Deployed on Railway.
+
+## Commands
+
+- `/start` — welcome message, registers you as a user
+- `/help` — list all commands
+- `/tts <text>` — convert text to speech (or reply to a message with /tts)
+- `/voices` — choose a voice
+- `/language` — choose a language
+- `/settings` — view/adjust speed and audio format
+- `/about` — about this bot
+
+You can also just paste text with no command and it'll convert automatically.
+
+## Local development
+
+1. Install ffmpeg (required for audio processing):
+   ```bash
+   # macOS
+   brew install ffmpeg
+   # Ubuntu/Debian
+   sudo apt install ffmpeg
